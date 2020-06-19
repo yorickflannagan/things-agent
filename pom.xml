@@ -1,0 +1,85 @@
+<project	xmlns="http://maven.apache.org/POM/4.0.0" 
+		mlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.crypthing</groupId>
+	<artifactId>things-manager</artifactId>
+	<version>1.0.0</version>
+	<name>Things Application Manager</name>
+	<description>Resources to control Things applications</description>
+
+	<licenses>
+		<license>
+		<name>GNU Lesser General Public License</name>
+		<url>https://www.gnu.org/licenses/lgpl.txt</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Marco Gutierrez</name>
+			<email>yorick.flannagan@gmail.com</email>
+			<organization>Yakoana</organization>
+			<organizationUrl>http://www.yakoana.com.br</organizationUrl>
+		</developer>
+		<developer>
+			<name>Diego von Sohsten</name>
+			<email>diego.sohsten@gmail.com</email>
+			<organization>Yakoana</organization>
+			<organizationUrl>http://www.yakoana.com.br</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://bitbucket.org/yakoana/app-manager.git</connection>
+		<developerConnection>scm:git:ssh://bitbucket.org:yakoana/app-manager.git</developerConnection>
+		<url>https://bitbucket.org/yakoana/app-manager/src</url>
+	</scm>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.crypthing</groupId>
+			<artifactId>things</artifactId>
+			<version>2.5.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.snmp4j</groupId>
+			<artifactId>snmp4j</artifactId>
+			<version>2.5.6</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.1.0</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.0.2</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>3.1.1</version>
+				<configuration>
+					<descriptors><descriptor>package.xml</descriptor></descriptors>
+					<attach>false</attach>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals><goal>single</goal></goals>
+					</execution>
+				</executions>
+			</plugin>                
+		</plugins>
+	</build>
+</project>

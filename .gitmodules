@@ -1,0 +1,9 @@
+[submodule "things"]
+	path = things
+	url = https://yorick-flannagan@bitbucket.org/yakoana/things.git
+[submodule "things-mgmt"]
+	path = things-mgmt
+	url = https://yorick-flannagan@bitbucket.org/yakoana/things-mgmt.git
+[submodule "things-mvn-archetype"]
+	path = things-mvn-archetype
+	url = https://yorick-flannagan@bitbucket.org/yakoana/things-mvn-archetype.git
