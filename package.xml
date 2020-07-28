@@ -14,7 +14,7 @@
 		</fileSet>
 		<fileSet>
 			<directory>${project.basedir}/agent</directory>
-			<outputDirectory>server</outputDirectory>
+			<outputDirectory>servers</outputDirectory>
 			<directoryMode>0755</directoryMode>
 			<excludes><exclude>*</exclude></excludes>
 		</fileSet>
@@ -23,6 +23,11 @@
 			<outputDirectory>backup</outputDirectory>
 			<directoryMode>0755</directoryMode>
 			<excludes><exclude>*</exclude></excludes>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}/agent</directory>
+			<outputDirectory>.</outputDirectory>
+			<includes><include>.profile</include></includes>
 		</fileSet>
 	</fileSets>
 	<dependencySets>

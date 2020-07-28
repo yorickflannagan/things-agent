@@ -7,3 +7,6 @@
 [submodule "things-mvn-archetype"]
 	path = things-mvn-archetype
 	url = https://yorick-flannagan@bitbucket.org/yakoana/things-mvn-archetype.git
+[submodule "app-monitor"]
+	path = app-monitor
+	url = https://yorick-flannagan@bitbucket.org/yakoana/app-monitor.git
