@@ -33,7 +33,6 @@
 	<dependencySets>
 		<dependencySet>
 			<outputDirectory>agent</outputDirectory>
-			<excludes><exclude>log*</exclude></excludes>
 			<useProjectArtifact>false</useProjectArtifact>
 		</dependencySet>
 	</dependencySets>
