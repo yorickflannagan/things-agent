@@ -7,25 +7,25 @@
 	<formats><format>tar.gz</format></formats>
 	<fileSets>
 		<fileSet>
-			<directory>${project.basedir}/agent</directory>
+			<directory>${project.basedir}</directory>
 			<outputDirectory>agent</outputDirectory>
 			<includes><include>*.sh</include></includes>
 			<filtered>true</filtered>
 		</fileSet>
 		<fileSet>
-			<directory>${project.basedir}/agent</directory>
+			<directory>${project.basedir}</directory>
 			<outputDirectory>servers</outputDirectory>
 			<directoryMode>0755</directoryMode>
 			<excludes><exclude>*</exclude></excludes>
 		</fileSet>
 		<fileSet>
-			<directory>${project.basedir}/agent</directory>
+			<directory>${project.basedir}</directory>
 			<outputDirectory>backup</outputDirectory>
 			<directoryMode>0755</directoryMode>
 			<excludes><exclude>*</exclude></excludes>
 		</fileSet>
 		<fileSet>
-			<directory>${project.basedir}/agent</directory>
+			<directory>${project.basedir}</directory>
 			<outputDirectory>.</outputDirectory>
 			<includes><include>.profile</include></includes>
 		</fileSet>

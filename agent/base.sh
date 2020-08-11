@@ -17,6 +17,7 @@
 #    Default -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
 #    JMX_CONF: optional JMX parameters. Default $JMX_NOAUTH -Djava.rmi.server.hostname=$JMX_HOST
 #    -Dcom.sun.management.jmxremote.port=$JMX_PORT_AGE
+#    AGENT_OID_ROOT: optional Agent root OID for SNMP traps. Default 1.51.171
 
 cur=$PWD
 cd $(dirname $0)
@@ -90,4 +91,7 @@ if [ -z "$JMX_CONF" ]; then
 	export JMX_CONF="$JMX_CONF=$JMX_HOST"
 	export JMX_CONF="$JMX_CONF -Dcom.sun.management.jmxremote.port"
 	export JMX_CONF="$JMX_CONF=$JMX_PORT_AGE"
+fi
+if [ -z "$AGENT_OID_ROOT" ]; then
+	export AGENT_OID_ROOT=1.51.171
 fi
