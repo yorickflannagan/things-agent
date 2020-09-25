@@ -9,7 +9,7 @@
 export WAIT_TIME=5
 code=0
 if [ "$1" = "agent" ]; then
-	java $JMX_CONF -cp "$CLASS_PATH" org.crypthing.things.appservice.Bootstrap $SNMP_TARGET $AGENT_OID_ROOT
+	nohup java $JMX_CONF -cp "$CLASS_PATH" org.crypthing.things.appservice.Bootstrap $SNMP_TARGET $AGENT_OID_ROOT &!
 else
 	java $JMX_NOAUTH -cp "$CLASS_PATH" org.crypthing.things.appservice.Launch --agent  $JMX_HOST $JMX_PORT_AGE --home $SERVERS/$NAME/ --runner $SERVERS/$NAME/config/config.xml
 	code="$?"
