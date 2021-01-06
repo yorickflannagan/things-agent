@@ -10,3 +10,6 @@
 [submodule "app-monitor"]
 	path = app-monitor
 	url = https://yorick-flannagan@bitbucket.org/yakoana/app-monitor.git
+[submodule "things-service"]
+	path = things-service
+	url = https://bitbucket.org/yakoana/things-service.git
