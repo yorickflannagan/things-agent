@@ -1,6 +1,3 @@
-[submodule "things-mvn-archetype"]
-	path = things-mvn-archetype
-	url = https://yorick-flannagan@bitbucket.org/yakoana/things-mvn-archetype.git
 [submodule "things-service"]
 	path = things-service
 	url = https://bitbucket.org/yakoana/things-service.git
