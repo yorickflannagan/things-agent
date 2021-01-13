@@ -1,6 +1,6 @@
 <assembly	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2" 
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
 
 	<id>pak</id>
 	<baseDirectory>things-execution</baseDirectory>
@@ -10,19 +10,25 @@
 			<directory>${project.basedir}</directory>
 			<outputDirectory>agent</outputDirectory>
 			<includes><include>*.sh</include></includes>
+			<excludes>
+				<exclude>.git/</exclude>
+				<exclude>.settings/</exclude>
+				<exclude>.vscode/</exclude>
+				<exclude>JCL/</exclude>
+			</excludes>
 			<filtered>true</filtered>
 		</fileSet>
 		<fileSet>
 			<directory>${project.basedir}</directory>
 			<outputDirectory>servers</outputDirectory>
 			<directoryMode>0755</directoryMode>
-			<excludes><exclude>*</exclude></excludes>
+			<excludes><exclude>**/*</exclude></excludes>
 		</fileSet>
 		<fileSet>
 			<directory>${project.basedir}</directory>
 			<outputDirectory>backup</outputDirectory>
 			<directoryMode>0755</directoryMode>
-			<excludes><exclude>*</exclude></excludes>
+			<excludes><exclude>**/*</exclude></excludes>
 		</fileSet>
 		<fileSet>
 			<directory>${project.basedir}</directory>
