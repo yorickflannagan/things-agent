@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.crypthing</groupId>
 	<artifactId>agent</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<name>Execution Environment</name>
 	<description>Things application execution environment</description>
 
@@ -42,7 +42,7 @@
 		<dependency>
 			<groupId>org.crypthing</groupId>
 			<artifactId>things</artifactId>
-			<version>2.5.12</version>
+			<version>2.5.13</version>
 		</dependency>
 		<dependency>
 			<groupId>org.snmp4j</groupId>
